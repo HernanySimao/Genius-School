@@ -1,0 +1,181 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  
+}
+
+a:hover {
+  color: #fff;
+}
+
+.hyperlink {
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 3px solid #ff0;
+  padding: 5px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hyperlink:hover {
+  color: #fff;
+  padding: 5px;
+}
+
+.btnX {
+  overflow: hidden;
+  transition: 2s;
+}
+.btnX:hover {
+  text-shadow: 0 0 5px rgba(255, 255, 0, 0.5), 0 0 5px rgba(255, 255, 0, 0.5),
+    0 0 5px rgba(255, 255, 0, 0.5), 0 0 5px rgba(255, 255, 0, 0.5),
+    0 0 5px rgba(255, 255, 0, 0.5);
+}
+
+.centro {
+  background: #2e2f34;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.menu {
+  float: right;
+  padding: 20px 0;
+  letter-spacing: 2px;
+}
+
+.ponto {
+  font-weight: 900;
+  color: yellow;
+}
+
+.paddingPerso {
+  padding-top: 30%;
+  margin-left: 90%;
+}
+
+.mgP {
+  margin-left: 60%;
+}
+
+.items {
+  position: absolute;
+  top: 200%;
+}
+
+@media only screen and (max-width: 480px) {
+  .img {
+    height: 100vh;
+    width: 100vh;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .img {
+    height: 100vh;
+    width: 100vh;
+  }
+}
+
+.efeitoT {
+  position: absolute;
+  left: -100;
+  top: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #0fff0f, #a34113, #ff0);
+  animation: anime 3s linear infinite;
+  transition-delay: 3s;
+}
+
+ 
+
+@keyframes anime {
+  0% {
+    left: -100;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.ordem {
+  margin-left: 10%;
+}
+
+.neonEfect-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  border: 4px solid #ff0;
+  padding: 5px 30px;
+  border-radius: 16px;
+
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.1), 0 0 29px #ff0;
+  box-shadow: inset 0 0 20px #ff0, 0 0 20px #ff0;
+  position: relative;
+}
+
+.neonEfect-btn::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ff0;
+  transform: perspective(64px) rotateX(40deg) scale(1, 0.35);
+  filter: blur(64px);
+  opacity: 0.7;
+}
+
+.neonEfect-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: #ff0;
+  box-shadow: 0 0 128px 32px #ff0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+
+.neonEfect-btn:hover::after,
+.neonEfect-btn:focus::after {
+  opacity: 1;
+}
+
+.neonEfect-btn:hover::before,
+.neonEfect-btn:focus::before {
+  opacity: 1;
+}
+
+.neonEfect-btn:hover,
+.neonEfect-btn:focus {
+  color: #fff;
+  text-shadow: none;
+}
+
+footer {
+  background-color: #2e2f34;
+  border-top: 2px solid #ff0;
+  color: #fff;
+  width: 100%;
+  height: 10vh;
+}
+
+/* .conteudo{
+  background-color: #34353a;
+} */

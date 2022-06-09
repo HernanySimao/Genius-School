@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    width: 100%;
+    height: 85px;
+}
+
+body{
+    background: url("../assets/img4.png") no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+
+a:hover {
+    color: #fff;
+  }
+  
+  .link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    color: #ff0;
+    padding: 5px;
+  }
+  
+  .centro {
+    background: #2e2f34;
+    height: 70px;
+    width: 100%;
+    top: 0;
+
+    
+  }
+
+  .padding-d{
+    padding-left: 90px;
+  }
+  .pp{
+    padding-left: 23%;
+  }
+  .menu {
+    float: right;
+    padding: 20px 0;
+    letter-spacing: 2px;
+    
+  }
+  
+  .logo {
+    float: left;
+    margin-top: 10px;
+    
+  }
+  
+  .items {
+    top: 250%;
+  
+
+  }
+
+  .centraliza{
+    margin-left: 100px;
+    width: 900px;
+
+  }
+
+  .go{
+    margin-top: 33px;
+    
+  }
+  
+  .img {
+    height: 10%;
+    width: 100%;
+  
+  } 
+
+  @media only screen and (max-width: 480px) {
+    .img {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .img {
+      width: 100%;
+    }
+  }
+
+ 
